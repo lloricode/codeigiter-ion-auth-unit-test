@@ -16,6 +16,7 @@ matrix:
     env: COMPOSER_FLAGS="--prefer-lowest"
 
 before_script:
+  - php bin/install.php ion-auth 3
   - travis_retry mysql -e 'create database homestead;'
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
