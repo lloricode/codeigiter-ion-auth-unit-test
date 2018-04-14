@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="CodeIgniter Application Test Suite" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.041334">
-    <testsuite name="Login_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Login_test.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.034695">
-      <testcase name="test_index" class="Login_test" classname="Login_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Login_test.php" line="13" assertions="1" time="0.034695"/>
+  <testsuite name="CodeIgniter Application Test Suite" tests="4" assertions="1" errors="3" failures="0" skipped="0" time="0.021096">
+    <testsuite name="Login_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Login_test.php" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.018550">
+      <testcase name="test_index" class="Login_test" classname="Login_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Login_test.php" line="13" assertions="0" time="0.018550">
+        <error type="RuntimeException">Login_test::test_index
+RuntimeException: mysqli::real_connect(): (HY000/2002): Connection refused on line 201 in file /home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/codeigniter/framework/system/database/drivers/mysqli/mysqli_driver.php
+
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestCase.php:168
+/home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/codeigniter/framework/system/database/drivers/mysqli/mysqli_driver.php:201
+/home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/codeigniter/framework/system/database/DB_driver.php:401
+/home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/codeigniter/framework/system/database/DB.php:216
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/replacing/core/Loader.php:411
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/controllers/Auth.php:15
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:328
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:282
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:151
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestCase.php:143
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Login_test.php:16
+/home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/phpunit/phpunit/phpunit:53
+</error>
+      </testcase>
     </testsuite>
-    <testsuite name="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.006639">
-      <testcase name="test_index" class="Welcome_test" classname="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" line="13" assertions="1" time="0.003048"/>
-      <testcase name="test_method_404" class="Welcome_test" classname="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" line="19" assertions="1" time="0.002322"/>
-      <testcase name="test_APPPATH" class="Welcome_test" classname="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" line="25" assertions="1" time="0.001269"/>
+    <testsuite name="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" tests="3" assertions="1" errors="2" failures="0" skipped="0" time="0.002547">
+      <testcase name="test_index" class="Welcome_test" classname="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" line="13" assertions="0" time="0.000935">
+        <error type="RuntimeException">Welcome_test::test_index
+RuntimeException: Trying to get property 'dsn' of non-object on line 39 in file /home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/functions.php
+
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestCase.php:168
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/functions.php:39
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:262
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:151
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestCase.php:143
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php:15
+/home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/phpunit/phpunit/phpunit:53
+</error>
+      </testcase>
+      <testcase name="test_method_404" class="Welcome_test" classname="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" line="19" assertions="0" time="0.000755">
+        <error type="RuntimeException">Welcome_test::test_method_404
+RuntimeException: Trying to get property 'dsn' of non-object on line 39 in file /home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/functions.php
+
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestCase.php:168
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/functions.php:39
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:262
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestRequest.php:151
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/_ci_phpunit_test/CIPHPUnitTestCase.php:143
+/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php:21
+/home/lloricode/Desktop/codeigniter/ion-auth-test/vendor/phpunit/phpunit/phpunit:53
+</error>
+      </testcase>
+      <testcase name="test_APPPATH" class="Welcome_test" classname="Welcome_test" file="/home/lloricode/Desktop/codeigniter/ion-auth-test/application/tests/controllers/Welcome_test.php" line="25" assertions="1" time="0.000857"/>
     </testsuite>
   </testsuite>
 </testsuites>
