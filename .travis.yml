@@ -22,4 +22,4 @@ before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
-- cd application/tests/; ../../vendor/bin/phpunit
+- cd application/tests/; ../../vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
